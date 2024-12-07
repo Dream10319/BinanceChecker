@@ -118,6 +118,18 @@ namespace BinanceChecker
                     }));
                 }
 
+                if (nCounter == nTotal_Number)
+                {
+                    this.Invoke(new Action(() =>
+                    {
+                        progressBar1.Value = 100;
+                    }));
+
+                    button1.Text = "Start";
+
+                    MessageBox.Show("Successfully finished");
+                };
+
                 // quitting browser
                 driver.Quit();
             }));
