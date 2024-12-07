@@ -144,6 +144,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Binance Checker";
             Load += Form1_Load;
             ResumeLayout(false);
